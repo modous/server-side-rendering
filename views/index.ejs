@@ -1,14 +1,15 @@
 <%- include('./partials/head.ejs') %>
 
-
-
-
-
-<article>
-
-
+<section>
+<h1>Boeken overzicht</h1>
+<% results.forEach(result => { %>
+    <article>
+        <p>yo</p>
     
-</article>
-
+     
+<img src="<%= result.coverimages %>" alt="boek">
+    </article>
+   <% }) %>
+</section>
 
 <%- include('./partials/foot.ejs') %>
