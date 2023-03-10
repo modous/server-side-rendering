@@ -16,7 +16,7 @@ app.get('/', (request, response) => {
 
   fetchJson(BoekenURL).then((data) => {
     response.render('index', data)
-    console.log(data);
+    // console.log(data);
   })
   
 })
