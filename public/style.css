@@ -1,6 +1,13 @@
+:root{
+    --primary: black;
+    --secondary: red;
+
+}
+
 body{
     font-family: 'Avenir',arial,sans-serif;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
+    margin: 0;
     
 }
 /* navigatie */
@@ -24,13 +31,13 @@ li{
 
 }
 
-#dev a{
+#navigatie a{
     text-decoration: none;
     color: #000000;
     
     
 }
-#dev a:hover{
+#navigatie a:hover{
 color:red;
 }
 
@@ -40,7 +47,7 @@ color:red;
     }
 }
 @media (max-width: 1100px){
-    #dev ul{
+    #navigatie ul{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
@@ -83,18 +90,90 @@ color:red;
     margin-bottom: 10px;
     margin-left: 10%;
     font-size: 80px;
-    font-family: avenir black;
-    color:red;
+    font-family: avenir var(--primary);
+    color: var(--secondary);
 }
 
 .boekenOverzicht{
     display: flex;
+    width: 100%;
+    overflow: scroll;
 }
 
 .boek{
     margin: 20px;
+
 }
 
+.bookstyle{
+    margin: 10px;
+}
+
+
+/* Search */
+.searchButton{
+    padding: 8px;
+    align-items: center;
+}
+
+.search{
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+.cover-image{
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    margin-left: 45px;
+    margin-bottom: 0px;
+}
+
+
+
+.info li{
+    display: flex;
+    padding: 2px;
+}
+
+
+.summary{
+ display: flex;
+ margin-left: 20%;
+
+
+}
+
+.span{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.span2{
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+
+.info li{
+    /* display: flex;
+    flex-direction: column; */
+    padding: 2px;
+    width: 500px;
+}
+
+.summ{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.cover{
+    margin-bottom: 50px;
+}
 
 
 
@@ -102,7 +181,7 @@ color:red;
 
 footer{
     height: 500px;
-    background-color: #000000;
+    background-color: var(--primary);
     padding-bottom: 0px;
 }
 
@@ -139,7 +218,7 @@ footer{
 }
 
 .Hfooter a:hover{
-    color: red;
+    color: var(--secondary);
 }
 
 .header-link{
@@ -160,10 +239,7 @@ footer{
 
 
 .active{
-    color: red !important;
+    color: var(--secondary) !important;
 }
 
 
-.searchButton{
-    padding: 8px;
-}
